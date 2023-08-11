@@ -1,4 +1,7 @@
 
+from collections import OrderedDict
+
+
 #Defines functions for counting denominations
 class PoolInterface():
 	'''
@@ -17,10 +20,9 @@ class PoolInterface():
 	addToPool(amount)
 		add denomiations to pool based on amount (highest to lowest)
 		returns remainder
-		
 	'''
 	def __init__(self):
-		this.AMOUNTS = {}
+		this.AMOUNTS = OrderedDict()
 
 	def addToPool(self, amount):
 		'''
@@ -36,21 +38,26 @@ class PoolInterface():
 		'''
 		pass
 
+	def sortDescending():
+		'''
+		
+		'''
+
 
 class ChangePool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = { 'penny'   :  0.01,
-			  		  'nickel'  :  0.05,
-			  		  'dime'    :  0.1,
-			  		  'quarter' :  0.25 }
+		this.AMOUNTS = OrderedDict({ 	('penny'   :  0.01),
+			  		  			('nickel'  :  0.05),
+			  		  			('dime'    :  0.1),
+			  		  			('quarter' :  0.25)	})
 
 
 class BillPool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = { 'one'    :  1,
-			  		  'five'   :  5,
-			  		  'ten'    :  10,
-			  		  'twenty' :  20 }
+		this.AMOUNTS = OrderedDict({	('one'    :  1),
+			  		  			('five'   :  5),
+			  		  			('ten'    :  10),
+			  		  			('twenty' :  20) }
 
