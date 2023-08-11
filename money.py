@@ -47,17 +47,17 @@ class PoolInterface():
 class ChangePool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = OrderedDict({ 	('penny'   :  0.01),
+		this.AMOUNTS = OrderedDict([ 	('penny'   :  0.01),
 			  		  			('nickel'  :  0.05),
 			  		  			('dime'    :  0.1),
-			  		  			('quarter' :  0.25)	})
+			  		  			('quarter' :  0.25)	])
 
 
 class BillPool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = OrderedDict({	('one'    :  1),
+		this.AMOUNTS = OrderedDict([	('one'    :  1),
 			  		  			('five'   :  5),
 			  		  			('ten'    :  10),
-			  		  			('twenty' :  20) }
+			  		  			('twenty' :  20) ])
 
