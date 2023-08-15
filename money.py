@@ -26,21 +26,29 @@ class PoolInterface():
 
 	def addToPool(self, amount):
 		'''
-		Adds denominationes to pool based on amount (highest to lowest)
+		Adds denominations to pool based on amount (highest to lowest)
 		then subtracts that amount from total, and returns the remainder.
 			
 			Parameters:
 				amount (double): A total money amount
 
 			Returns:
-				remainder (double) : left over amount after denominations
+				remainder (double): left over amount after denominations
 								 are removed
 		'''
 		pass
 
-	def sortDescending():
+	def removeFromPool(self, amount):
 		'''
-		
+		Removes denominations from bool based on amount (highest to lowest)
+		then subtracts that amount from total, and returns the remainder.
+
+			Parameters:
+				amount (double): A total money amount
+
+			Returns:
+				remainder (double): left over amount after denominations
+								are removed
 		'''
 
 
