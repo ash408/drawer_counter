@@ -1,5 +1,4 @@
 
-#Defines functions for counting denominations
 class BankInterface():
 	'''
 	Interfaced used for creation of banks

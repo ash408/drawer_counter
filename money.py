@@ -2,7 +2,6 @@
 from collections import OrderedDict
 
 
-#Defines functions for counting denominations
 class PoolInterface():
 	'''
 	Interfaced used for creation of money pools
