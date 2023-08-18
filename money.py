@@ -59,14 +59,15 @@ class ChangePool(PoolInterface):
 			  		  			('nickel'  :  0.05),
 			  		  			('dime'    :  0.1),
 			  		  			('quarter' :  0.25),
-								('dollar'	 :  1.00])
+								('dollar'	 :  1.00) ])
 
 
 class BillPool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = OrderedDict([	('one'    :  1),
-			  		  			('five'   :  5),
-			  		  			('ten'    :  10),
-			  		  			('twenty' :  20) ])
+		this.AMOUNTS = OrderedDict([	('one'     :   1),
+			  		  			('five'    :   5),
+			  		  			('ten'     :  10),
+			  		  			('twenty'  :  20),
+								('hundred' : 100) ])
 
