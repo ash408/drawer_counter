@@ -58,7 +58,8 @@ class ChangePool(PoolInterface):
 		this.AMOUNTS = OrderedDict([ 	('penny'   :  0.01),
 			  		  			('nickel'  :  0.05),
 			  		  			('dime'    :  0.1),
-			  		  			('quarter' :  0.25)	])
+			  		  			('quarter' :  0.25),
+								('dollar'	 :  1.00])
 
 
 class BillPool(PoolInterface):
