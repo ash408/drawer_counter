@@ -1,4 +1,8 @@
 
+from money import ChangePool
+from money import BillPool
+
+
 class BankInterface():
 	'''
 	Interfaced used for creation of banks
