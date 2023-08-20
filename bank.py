@@ -5,7 +5,7 @@ from money import BillPool
 
 class BankInterface():
 	'''
-	Interfaced used for creation of banks
+	Interface used for creation of banks
 
 	...
 
