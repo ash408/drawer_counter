@@ -24,7 +24,8 @@ class BankInterface():
 		returns ...
 	'''
 	def __init__(self):
-		pass
+		self.change = ChangePool()
+		self.bills = BillPool()
 
 	def TODO(self):
 		'''
