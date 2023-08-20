@@ -11,8 +11,11 @@ class BankInterface():
 
 	Attributes
 	==========
-	variable : type
-		description
+	change : ChangePool
+		Holder for change denominations
+
+	bills : BillPool
+		Holder for bill denominations
 
 	Methods
 	=======
