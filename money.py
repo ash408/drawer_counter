@@ -51,6 +51,37 @@ class PoolInterface():
 		'''
 		pass
 
+	def addDenominations(denominations):
+		'''
+		Adds denominations to pool based on dictionary, removing
+		denominations from said dictionary and returning the remainder.
+
+			Parameters:
+				denominations : dict (str : int)
+					key : name on denomination
+					value : number to add
+
+			Returns:
+				denominations : dict (str : int)
+					key : name of denomination
+					value : number to add
+		'''
+
+	def removeDenominations(denominations):
+		'''
+		Removes denominations from pool based on dictionary, removing
+		denominations from said dictionary and returning the remainder.
+
+			Parameters:
+				denominations : dict (str : int)
+					key : name on denomination
+					value : number to remove
+
+			Returns:
+				denominations : dict (str : int)
+					key : name of denomination
+					value : number to remove
+		'''
 
 class ChangePool(PoolInterface):
 
