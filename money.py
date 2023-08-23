@@ -39,7 +39,7 @@ class PoolInterface():
 
 	def removeFromPool(self, amount):
 		'''
-		Removes denominations from bool based on amount (highest to lowest)
+		Removes denominations from pool based on amount (highest to lowest)
 		then subtracts that amount from total, and returns the remainder.
 
 			Parameters:
