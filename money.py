@@ -19,6 +19,18 @@ class PoolInterface():
 	addToPool(amount)
 		add denomiations to pool based on amount (highest to lowest)
 		returns remainder
+
+	removeFromPool(amount)
+		remove denominations from pool based on amount (highest to lowest)
+		returns remainder
+
+	addDenominations(denominations)
+		add denominations to pool based on dictionary of denominations
+		returns dictionary with remainder
+
+	removeDenominations(denominations)
+		remove denominations from pool based on dictionary of denominations
+		returns dictionary with remainder
 	'''
 	def __init__(self):
 		this.AMOUNTS = OrderedDict()
