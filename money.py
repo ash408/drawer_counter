@@ -6,7 +6,6 @@ class PoolInterface():
 	'''
 	Interfaced used for creation of money pools
 
-	...
 
 	Attributes
 	==========
@@ -78,6 +77,7 @@ class PoolInterface():
 					key : name of denomination
 					value : number to add
 		'''
+		pass
 
 	def removeDenominations(denominations):
 		'''
@@ -94,6 +94,7 @@ class PoolInterface():
 					key : name of denomination
 					value : number to remove
 		'''
+		pass
 
 class ChangePool(PoolInterface):
 
