@@ -35,8 +35,13 @@ class PoolInterface():
 		remove denominations from pool based on dictionary of denominations
 		returns dictionary with remainder
 	'''
-	def __init__(self, values, amounts):
+	def __init__(self, values):
 		self.VALUES = values
+		
+		amounts = {}
+		for denomination in list(values.keys()):
+			amounts[denomination] = 0
+
 		self.amounts = amounts
 
 	def addToPool(self, amount):
