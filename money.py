@@ -9,9 +9,13 @@ class PoolInterface():
 
 	Attributes
 	==========
-	AMOUNTS : dict (str : double), constant
+	VALUES : OrderedDict (str : double), constant
 		key : name of denomination
 		value : monitary value
+
+	amounts : dict (str : int)
+		key : name of denomination
+		value : number of denomination in pool
 
 	Methods
 	=======
@@ -31,8 +35,9 @@ class PoolInterface():
 		remove denominations from pool based on dictionary of denominations
 		returns dictionary with remainder
 	'''
-	def __init__(self):
-		this.AMOUNTS = OrderedDict()
+	def __init__(self, values, amounts):
+		self.VALUES = values
+		self.amounts = amounts
 
 	def addToPool(self, amount):
 		'''
@@ -96,10 +101,11 @@ class PoolInterface():
 		'''
 		pass
 
+
 class ChangePool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = OrderedDict([ 	('penny'   :  0.01),
+		this.VALUES = OrderedDict([ 	('penny'   :  0.01),
 			  		  			('nickel'  :  0.05),
 			  		  			('dime'    :  0.10),
 			  		  			('quarter' :  0.25),
@@ -110,7 +116,7 @@ class ChangePool(PoolInterface):
 class BillPool(PoolInterface):
 
 	def __init__(self):
-		this.AMOUNTS = OrderedDict([	('one'     :   1),
+		this.VALUES = OrderedDict([	('one'     :   1),
 								('two'	 :	2),
 			  		  			('five'    :   5),
 			  		  			('ten'     :  10),
