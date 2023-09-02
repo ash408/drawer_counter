@@ -1,12 +1,13 @@
 
 import unittest
+from collections import OrderedDict
 
-from ..money import PoolInterface
+from money import PoolInterface
 
 class TestPoolInterface(unittest.TestCase):
 
 	def test_interface_initialization (self):
-		VALUES = OrderedDict([('a' : 0.1), ('b', 0.5)])
+		VALUES = OrderedDict([('a', 0.1), ('b', 0.5)])
 
 		interface = PoolInterface(VALUES)
 
