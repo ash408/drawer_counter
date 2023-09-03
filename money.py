@@ -3,6 +3,7 @@ from collections import OrderedDict
 
 
 class PoolInterface():
+
 	'''
 	Interfaced used for creation of money pools
 
@@ -35,6 +36,7 @@ class PoolInterface():
 		remove denominations from pool based on dictionary of denominations
 		returns dictionary with remainder
 	'''
+
 	def __init__(self, values):
 		self.VALUES = values
 		
@@ -45,6 +47,7 @@ class PoolInterface():
 		self.amounts = amounts
 
 	def addToPool(self, amount):
+
 		'''
 		Adds denominations to pool based on amount (highest to lowest)
 		then subtracts that amount from total, and returns the remainder.
@@ -56,9 +59,24 @@ class PoolInterface():
 				remainder (double): left over amount after denominations
 								 are removed
 		'''
-		pass
+
+		#iterate through denominations and values
+		for denomination, value in self.VALUES.items():
+			#divide amount by denom and add to amounts
+			add_to_denom = amount / value
+			number_of_denom = self.amounts[denomination]
+
+			self.amounts[denomination] = number_of_denom + add_to_denom
+			
+			amount = amount % value
+			
+			if amount == 0:
+				break;
+
+		return amount
 
 	def removeFromPool(self, amount):
+
 		'''
 		Removes denominations from pool based on amount (highest to lowest)
 		then subtracts that amount from total, and returns the remainder.
@@ -70,6 +88,7 @@ class PoolInterface():
 				remainder (double): left over amount after denominations
 								are removed
 		'''
+
 		pass
 
 	def addDenominations(denominations):
