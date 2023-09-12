@@ -2,20 +2,14 @@
 import unittest
 from collections import OrderedDict
 
-from money import PoolInterface
+from money import ChangePool
+from money import BillPool
 
-class TestPoolInterface(unittest.TestCase):
 
-	def test_interface_initialization (self):
-		VALUES = OrderedDict([('a', 0.1), ('b', 0.5)])
+class TestChangePool(unittest.TestCase):
 
-		interface = PoolInterface(VALUES)
-
-		self.assertEqual(interface.VALUES['a'], 0.1)
-		self.assertEqual(interface.VALUES['b'], 0.5)
-
-		self.assertEqual(interface.amounts['a'], 0)
-		self.assertEqual(interface.amounts['b'], 0)
+	def setUp(self):
+		pass
 
 
 if __name__ == '__main__':

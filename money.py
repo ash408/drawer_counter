@@ -2,10 +2,10 @@
 from collections import OrderedDict
 
 
-class PoolInterface():
+class PoolAbstract():
 
 	'''
-	Interfaced used for creation of money pools
+	Abstract used for creation of money pools
 
 
 	Attributes
