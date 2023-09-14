@@ -129,22 +129,24 @@ class PoolAbstract():
 class ChangePool(PoolInterface):
 
 	def __init__(self):
-		this.VALUES = OrderedDict([ 	('penny',	  	0.01),
-			  		  			('nickel',  	0.05),
-			  		  			('dime',	 	0.10),
-			  		  			('quarter',  	0.25),
-								('half',		0.50),
-								('dollar',	1.00) ])
+		VALUES = OrderedDict([ 	('penny',	  	0.01),
+			  		  		('nickel',  	0.05),
+			  		  		('dime',	 	0.10),
+			  		  		('quarter',  	0.25),
+							('half',		0.50),
+							('dollar',	1.00) ])
+		super(VALUES)
 
 
 class BillPool(PoolInterface):
 
 	def __init__(self):
-		this.VALUES = OrderedDict([	('one',		1),
-								('two',		2),
-			  		  			('five',   	5),
-			  		  			('ten',  		10),
-			  		  			('twenty',  	20),
-								('fifty',  	50),
-								('hundred', 	100) ])
+		VALUES = OrderedDict([	('one',		1),
+							('two',		2),
+			  		  		('five',   	5),
+			  		  		('ten',  		10),
+			  		  		('twenty',  	20),
+							('fifty',  	50),
+							('hundred', 	100) ])
+		super(VALUES)
 
