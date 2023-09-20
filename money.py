@@ -126,7 +126,7 @@ class PoolAbstract():
 		pass
 
 
-class ChangePool(PoolInterface):
+class ChangePool(PoolAbstract):
 
 	def __init__(self):
 		VALUES = OrderedDict([ 	('penny',	  	0.01),
@@ -138,7 +138,7 @@ class ChangePool(PoolInterface):
 		super(VALUES)
 
 
-class BillPool(PoolInterface):
+class BillPool(PoolAbstract):
 
 	def __init__(self):
 		VALUES = OrderedDict([	('one',		1),
